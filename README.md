@@ -17,6 +17,7 @@ func main() {
 ### Problem 2 
 
 Calculate the LCM from numbers 1 - 10
+
 The Function `size_t lcm(size_t a, size_t b)` takes 2 numbers as parameters.
 The Bigger number of the two is used as a start.
 Then the program counts up until the number is divisible by both numbers.
