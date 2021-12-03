@@ -6,6 +6,7 @@
   - [Content](#content)
     - [Problem 1](#problem-1)
     - [Problem 2](#problem-2)
+    - [Problem 3](#problem-3)
     - [How To Run The Code](#how-to-run-the-code)
 
 ### Problem 1
@@ -34,6 +35,16 @@ Calculate the LCM from numbers 1 - 10
 - Then the program counts up until the number is divisible by both numbers.
 
 
+### Problem 3
+
+Calculate the GCD of all numbers from 1 - 10
+
+[Source Code](Problem03.java)
+
+- The Function `private int findGCD(int a, int b)` takes 2 numbers as parameters.
+- This Function will be called recursively with the args `(b, a % b)` until `b == 0` and `a` is returned.
+
+
 ### How To Run The Code
 - Go
   - Install Golang on your local machine
@@ -41,4 +52,7 @@ Calculate the LCM from numbers 1 - 10
 - C
   - Install a C compiler (Ex. GCC)
   - gcc Problem02.c -o Problem2
-  - Run the created .EXE file
+  - Run the created .exe / .o file
+- Java
+  - Install JDK & JRE
+  - Run the following commands in a terminal: `javac .\Problem03.java; & java Problem03`
