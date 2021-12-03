@@ -1,5 +1,7 @@
 package main
 
 func main() {
-	println("Hello World!")
+	for i := 0; i < 5; i++ {
+		println("Hello World!")
+	}
 }
