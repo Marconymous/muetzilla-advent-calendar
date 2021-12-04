@@ -73,11 +73,13 @@ Create a Calculator using Python which can do (+-*/) operations.
 [Source Code](Problem04.py)
 
 - First the calculation is split into it's parts (numbers & operators)
-  - 15 + 53 => `['15', '+', '53']`
+  - 15 + 53 * 10 => `['15', '+', '53', '*', '10']`
 - Then the operations * and / are performed
   - `def point_calc(calc):`
+  - `=> ['15', '+', '530']`
 - Finally the operations + and - are performed
   - `def dash_calc(calc):`
+  - `=> [545]`
 
 ```python
 split = split_calculation(calculation)
