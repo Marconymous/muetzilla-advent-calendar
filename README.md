@@ -7,6 +7,7 @@
   - [Problem 1](#problem-1)
   - [Problem 2](#problem-2)
   - [Problem 3](#problem-3)
+  - [Problem 4](#problem-4)
   - [How To Run The Code](#how-to-run-the-code)
 
 ## Problem 1
@@ -65,15 +66,41 @@ private int findGCD(int a, int b) {
 }
 ```
 
+## Problem 4
+
+Create a Calculator using Python which can do (+-*/) operations.
+
+[Source Code](Problem04.py)
+
+- First the calculation is split into it's parts (numbers & operators)
+  - 15 + 53 => `['15', '+', '53']`
+- Then the operations * and / are performed
+  - `def point_calc(calc):`
+- Finally the operations + and - are performed
+  - `def dash_calc(calc):`
+
+```python
+split = split_calculation(calculation)
+try:
+    after_point = point_calc(split)
+    after_dash = dash_calc(after_point)
+    print(f"The result is: {after_dash}")
+except:
+    print("The calculation you entered is not Valid!")
+```
+
 
 ## How To Run The Code
 - Go
   - Install Golang on your local machine
-  - Run the following command in a terminal: `go run .\Problem01.go`
+  - Run the following command in a terminal: `go run .\ProblemXX.go`
 - C
   - Install a C compiler (Ex. GCC)
-  - gcc Problem02.c -o Problem2
+  - Run the following command: `gcc ProblemXX.c -o ProblemXX`
   - Run the created .exe / .o file
 - Java
   - Install JDK & JRE
-  - Run the following commands in a terminal: `javac .\Problem03.java; & java Problem03`
+  - Run the following commands in a terminal: `javac .\ProblemXX.java; & java ProblemXX`
+- Python
+  - Install Python on your system
+  - Run the following command: `python ProblemXX.py`
