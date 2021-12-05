@@ -56,7 +56,7 @@ enum class Shape(val circumerence: () -> Double, val area: () -> Double) {
 }
 
 fun main() {
-    val shapelist = Shape.values().map { it.name }.reduce(fun(s, s1) = "$s $s1,")
+    val shapelist = Shape.values().map { it.name }.reduce(fun(s, s1) = "$s $s1,").removeSuffix(",")
     print("Which Shape should be calculated ($shapelist) > ")
     val shape = readLine() ?: run {
         println("Shape not entered!")
