@@ -8,6 +8,7 @@
   - [Problem 2](#problem-2)
   - [Problem 3](#problem-3)
   - [Problem 4](#problem-4)
+  - [Problem 4](#problem-4-1)
   - [How To Run The Code](#how-to-run-the-code)
 
 ## Problem 1
@@ -92,6 +93,14 @@ except:
 ```
 
 
+## Problem 4
+
+Make a Program to calculate the circumference and area of a Shape
+
+[Source Code](Problem05.kt)
+
+Enum with functions for shapes `enum class Shape(val circumerence: () -> Double, val area: () -> Double)`
+
 ## How To Run The Code
 - Go
   - Install Golang on your local machine
@@ -106,3 +115,7 @@ except:
 - Python
   - Install Python on your system
   - Run the following command: `python ProblemXX.py`
+- Kotlin
+  - Install Kotlin
+  - Run the following command: `kotlinc ProblemXX.kt -include-runtime -d ProblemXX.jar`
+  - To Run the Problem, run: `java -jar ProblemXX.kt` 
