@@ -9,6 +9,7 @@
   - [Problem 3](#problem-3)
   - [Problem 4](#problem-4)
   - [Problem 5](#problem-5)
+  - [Problem 6](#problem-6)
   - [How To Run The Code](#how-to-run-the-code)
 
 ## Problem 1
@@ -101,6 +102,22 @@ Make a Program to calculate the circumference and area of a Shape
 
 Enum with functions for shapes `enum class Shape(val circumerence: () -> Double, val area: () -> Double)`
 
+## Problem 6
+
+Create a Program in any JVM Language, which takes user input and converts it to the nth Primenumber
+
+[Source Code](Problem06.scala)
+
+```scala
+private def isPrime(n: Int): Boolean = {
+        for (i <- 2 to (n / 2)) {
+            if (n % i == 0) return false
+        }
+
+        true
+    }
+```
+
 ## How To Run The Code
 - Go
   - Install Golang on your local machine
@@ -119,3 +136,8 @@ Enum with functions for shapes `enum class Shape(val circumerence: () -> Double,
   - Install Kotlin
   - Run the following command: `kotlinc ProblemXX.kt -include-runtime -d ProblemXX.jar`
   - To Run the Problem, run: `java -jar ProblemXX.kt` 
+- Scala
+  - Install Scala
+  - Run the following commands:
+    - Compile: `scalac ProblemXX.scala`
+    - Run: `scala ProblemXX`
