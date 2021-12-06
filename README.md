@@ -106,6 +106,8 @@ Enum with functions for shapes `enum class Shape(val circumerence: () -> Double,
 
 Create a Program in any JVM Language, which takes user input and converts it to the nth Primenumber
 
+Language used: Scala
+
 [Source Code](Problem06.scala)
 
 ```scala
