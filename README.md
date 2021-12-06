@@ -112,12 +112,12 @@ Language used: Scala
 
 ```scala
 private def isPrime(n: Int): Boolean = {
-        for (i <- 2 to (n / 2)) {
-            if (n % i == 0) return false
-        }
-
-        true
+    for (i <- 2 to (n / 2)) {
+        if (n % i == 0) return false
     }
+
+    true
+}
 ```
 
 ## How To Run The Code
