@@ -10,6 +10,7 @@
   - [Problem 4](#problem-4)
   - [Problem 5](#problem-5)
   - [Problem 6](#problem-6)
+  - [Problem 7](#problem-7)
   - [How To Run The Code](#how-to-run-the-code)
 
 ## Problem 1
@@ -119,6 +120,12 @@ private def isPrime(n: Int): Boolean = {
     true
 }
 ```
+
+## Problem 7
+
+Create a Website to manage wishes
+
+[Source Code](Problem07.html)
 
 ## How To Run The Code
 - Go
