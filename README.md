@@ -11,6 +11,7 @@
   - [Problem 5](#problem-5)
   - [Problem 6](#problem-6)
   - [Problem 7](#problem-7)
+  - [Problem 8](#problem-8)
   - [How To Run The Code](#how-to-run-the-code)
 
 ## Problem 1
@@ -127,6 +128,35 @@ Create a Website to manage wishes
 
 [Source Code](Problem07.html)
 
+
+## Problem 8
+
+Create an algorithm in Rust which can sort an array on numbers
+
+[Source Code](Problem08.rs)
+
+```rust
+fn sort(arr: &mut [i32]) -> &mut [i32] {
+    let mut changed = false;
+    for i in 0..arr.len() {
+        for j in 0..arr.len() - 1 - i {
+            if arr[j] > arr[j + 1] {
+                let swap = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = swap;
+                changed = true
+            }
+        }
+
+        if !changed {
+            return arr;
+        }
+    }
+
+    return arr;
+}
+```
+
 ## How To Run The Code
 - Go
   - Install Golang on your local machine
@@ -150,3 +180,8 @@ Create a Website to manage wishes
   - Run the following commands:
     - Compile: `scalac ProblemXX.scala`
     - Run: `scala ProblemXX`
+- Rust
+  - Install Rust
+  - Create a Cargo Project with: `cargo init`
+  - Paste the Code into the created .rs file
+  - Run the program with the following command: `cargo run`
