@@ -12,6 +12,7 @@
   - [Problem 6](#problem-6)
   - [Problem 7](#problem-7)
   - [Problem 8](#problem-8)
+  - [Problem 9](#problem-9)
   - [How To Run The Code](#how-to-run-the-code)
 
 ## Problem 1
@@ -154,6 +155,26 @@ fn sort(arr: &mut [i32]) -> &mut [i32] {
     }
 
     return arr;
+}
+```
+
+
+## Problem 9
+
+Create a Program which can print songtext from a file line by line.
+The User can specify the amount it takes for the next line to be printed.
+
+[Source Code](Problem09.java)
+
+```java
+public void printsong(long time) throws InterruptedException {
+    if (!fileScanner.hasNext())
+        return;
+
+    Thread.sleep(time);
+    System.out.println(fileScanner.nextLine());
+
+    printsong(time);
 }
 ```
 
