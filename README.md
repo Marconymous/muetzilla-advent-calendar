@@ -13,6 +13,7 @@
   - [Problem 7](#problem-7)
   - [Problem 8](#problem-8)
   - [Problem 9](#problem-9)
+  - [Problem 10](#problem-10)
   - [How To Run The Code](#how-to-run-the-code)
 
 ## Problem 1
@@ -178,6 +179,25 @@ public void printsong(long time) throws InterruptedException {
 }
 ```
 
+## Problem 10
+
+Create a Rock Paper Scissors Program in JavaScript
+
+To find who won I used array indices.
+
+```javascript
+function getWinner(i, j) {
+    function increment(i) {
+        return (i + 1) % moves.length;
+    }
+
+    if (j === increment(i)) return 'Computer'
+    if (j === i) return 'No one'
+
+    return 'Player'
+}
+```
+
 ## How To Run The Code
 - Go
   - Install Golang on your local machine
@@ -206,3 +226,6 @@ public void printsong(long time) throws InterruptedException {
   - Create a Cargo Project with: `cargo init`
   - Paste the Code into the created .rs file
   - Run the program with the following command: `cargo run`
+- JavaScript
+  - Install node
+  - Run the following command: `node ProblemXX.js`
