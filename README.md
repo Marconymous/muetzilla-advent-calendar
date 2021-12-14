@@ -14,6 +14,8 @@
   - [Problem 8](#problem-8)
   - [Problem 9](#problem-9)
   - [Problem 10](#problem-10)
+  - [Problem 11](#problem-11)
+  - [Problem 12](#problem-12)
   - [How To Run The Code](#how-to-run-the-code)
 
 ## Problem 1
@@ -197,6 +199,22 @@ function getWinner(i, j) {
     return 'Player'
 }
 ```
+
+## Problem 11
+
+Create a Program which takes words as user input and creates new words with them
+
+```c#
+static Tuple<string, string> SplitString(string s)
+{
+    var strLen = s.Length / 2;
+    return new Tuple<string, string>(s.Substring(0, strLen), s.Substring(strLen, strLen));
+}
+```
+
+## Problem 12
+
+
 
 ## How To Run The Code
 - Go
